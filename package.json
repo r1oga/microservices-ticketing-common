@@ -1,6 +1,6 @@
 {
   "name": "@r1ogatix/common",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
   "files": [
@@ -10,7 +10,8 @@
   "author": "r1oga",
   "scripts": {
     "clean": "del ./build/*",
-    "build": "yarn run clean && tsc"
+    "build": "yarn run clean && tsc",
+    "pub": "git add . && git commit -m \"Updates\" && yarn run build && yarn publish --patch"
   },
   "devDependencies": {
     "del-cli": "^3.0.1",
