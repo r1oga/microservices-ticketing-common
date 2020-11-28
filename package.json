@@ -1,6 +1,6 @@
 {
   "name": "@r1ogatix/common",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
   "files": [
@@ -10,7 +10,7 @@
   "author": "r1oga",
   "keywords": [
     "microservices",
-    "middelwares",
+    "middlewares",
     "errors"
   ],
   "repository": "github:r1oga/microservices-ticketing-common",
