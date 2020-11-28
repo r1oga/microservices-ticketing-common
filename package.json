@@ -1,6 +1,6 @@
 {
   "name": "@r1ogatix/common",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
   "files": [
@@ -8,6 +8,13 @@
   ],
   "license": "MIT",
   "author": "r1oga",
+  "keywords": [
+    "microservices",
+    "middelwares",
+    "errors"
+  ],
+  "repository": "github:r1oga/microservices-ticketing-common",
+  "homepage": "https://github.com/r1oga/microservices-ticketing-common",
   "scripts": {
     "clean": "del ./build/*",
     "build": "yarn run clean && tsc",
