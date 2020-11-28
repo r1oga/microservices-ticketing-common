@@ -11,7 +11,7 @@
   "scripts": {
     "clean": "del ./build/*",
     "build": "yarn run clean && tsc",
-    "pub": "git add . && git commit -m \"Updates\" && yarn run build && yarn publish --patch"
+    "pub": "git add . && git commit -m \"Updates\" && git push origin main && yarn run build && yarn publish --patch"
   },
   "devDependencies": {
     "del-cli": "^3.0.1",
