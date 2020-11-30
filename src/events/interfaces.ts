@@ -1,7 +1,4 @@
-export enum Subjects {
-  TicketCreated = 'ticket:created',
-  TicketUpdated = 'ticket:updated'
-}
+import { Subjects } from './types'
 
 export interface Event {
   subject: Subjects
