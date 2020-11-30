@@ -1,4 +1,4 @@
-import { Subjects } from './types'
+import { Subjects, OrderStatus } from './types'
 
 export interface Event {
   subject: Subjects
@@ -13,4 +13,23 @@ export interface TicketCreatedEvent {
 export interface TicketUpdatedEvent {
   subject: Subjects.TicketUpdated
   data: { id: string; title: string; price: number; userId: string }
+}
+
+export interface OrderCreatedEvent {
+  subject: Subjects.OrderCreated
+  data: {
+    id: string
+    status: OrderStatus
+    userId: string
+    expiresAt: string //will be used as JSON
+    ticket: { id: string; price: number }
+  }
+}
+
+export interface OrderCancelledEvent {
+  subject: Subjects.OrderCancelled
+  data: {
+    id: string
+    ticket: { id: string }
+  }
 }
