@@ -3,7 +3,7 @@ export enum Subjects {
   TicketUpdated = 'ticket:updated'
 }
 
-export enum OrderStats {
+export enum OrderStatus {
   //order created but corresponding ticket has not been reserved
   Created = 'created',
   /*
