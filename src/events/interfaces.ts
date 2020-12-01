@@ -48,3 +48,7 @@ export interface OrderCancelledEvent {
     ticket: { id: string }
   }
 }
+
+export interface ExpirationCompleteEvent {
+  orderId: string
+}
