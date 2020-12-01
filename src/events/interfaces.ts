@@ -7,18 +7,31 @@ export interface Event {
 
 export interface TicketCreatedEvent {
   subject: Subjects.TicketCreated
-  data: { id: string; title: string; price: number; userId: string }
+  data: {
+    id: string
+    title: string
+    price: number
+    userId: string
+    version: number
+  }
 }
 
 export interface TicketUpdatedEvent {
   subject: Subjects.TicketUpdated
-  data: { id: string; title: string; price: number; userId: string }
+  data: {
+    id: string
+    title: string
+    price: number
+    userId: string
+    version: number
+  }
 }
 
 export interface OrderCreatedEvent {
   subject: Subjects.OrderCreated
   data: {
     id: string
+    version: number
     status: OrderStatus
     userId: string
     expiresAt: string //will be used as JSON
@@ -30,6 +43,7 @@ export interface OrderCancelledEvent {
   subject: Subjects.OrderCancelled
   data: {
     id: string
+    version: number
     ticket: { id: string }
   }
 }
