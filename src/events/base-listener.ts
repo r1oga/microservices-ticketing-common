@@ -15,7 +15,7 @@ export abstract class Listener<T extends Event> {
   // number of seconds listener has to ack a message
   protected ackwait = 5000 // 5s
 
-  constructor(private client: Stan) {}
+  constructor(protected client: Stan) {}
 
   subscriptionOptions() {
     return this.client
