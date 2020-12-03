@@ -3,7 +3,10 @@ import express from 'express'
 
 const middlewares = [
   express.json(),
-  cookieSession({ signed: false, secure: process.env.NODE_ENV !== 'test' })
+  cookieSession({
+    signed: false,
+    secure: false /*process.env.NODE_ENV !== 'test'*/
+  })
 ]
 
 export { middlewares }
